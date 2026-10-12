@@ -1,0 +1,281 @@
+body {
+  margin: 0px;
+  background-color: beige;
+}
+h2, h3 {
+  margin: 0;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+h3{
+  margin-top: 20px;
+}
+.huvudtitle {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  letter-spacing: 7px;
+  margin: 0;
+  padding: 20px 0;
+}
+.konstbild{
+  max-width: 800px;
+  height:auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+/* MENY */
+.meny ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.meny {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #446136;
+  border-color: #456337;
+  border-bottom: 3px solid #012c09;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.meny a {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #446136;
+  transition: background-color 0.3s, color 0.3s;
+  display: block; 
+  border-radius: 5px;
+  border-color: #2e4124;
+  border-width: 1px;
+  border-style: solid;
+}
+.meny a:hover {
+  background-color: beige;
+  color: black;
+  box-shadow: 0 30px 40px rgb(0, 0, 0, 0.1);
+}
+/* LAYOUT */
+footer{
+  color:white;
+  padding: 5px;
+  padding-bottom: 50px;
+  font-weight: normal;
+  background-color: #446136;
+}
+.sektion_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #dde5d0;
+  padding: 50px;
+  padding-bottom: 600px;
+  margin: auto;
+  gap: 20px;
+  max-width: 1400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.sektion_2{ 
+  max-width: 1800px;
+  background-color: #dde5d0;
+  margin:auto;
+  padding-bottom: 100px;
+}
+/* Index sidan */
+.sektion_1 h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin:auto;
+}
+.artikel {
+  grid-column: 1;
+  background-color: #a2c7661a;
+  align-items: start;
+  font-family: Arial, sans-serif;
+  color: black;
+  padding: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.sidotext{
+  grid-column: 2;
+  font-family: Arial, sans-serif;
+  color: black;
+  padding: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin:0;
+  background-color: #dde5d0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  max-height: 500px;
+  max-width: 300px;
+}
+/* Galleri sidan*/
+#galleri_huvud{
+  background-color: #dde5d0;
+  max-width: 2000px;
+  margin: auto;
+}
+#galleri_title{
+  max-width: 1200px;
+  margin:auto;
+  padding: 50px;
+  border-radius: 10px;
+}
+#galleri_title h2{
+  text-align: start;
+  font-size: 36px;
+}
+.galleri_grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 500px;
+  gap: 70px;
+  overflow-x: auto;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  background-color: #dee2d79c;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.bildkort {
+  display: flex;
+  flex-direction: column;
+}
+.bildkort img {
+  width: 500px;
+  height: 100%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.bildkort img:hover {
+  transform: scale(1.15) translateY(-5px);
+  z-index: 10;
+  position: relative;
+}
+.bildkort p {
+  margin-top: 40px;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.bild{
+  grid-column: 2;
+  max-width: 800px;
+  height:auto;
+  margin:auto;
+}
+/* OM MIG SIDAN*/
+#konstbild-gunnar {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #446136;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.artikel--kontakt{
+  margin-bottom: 700px;
+  padding:100px;
+  text-align: center;
+  max-width: 500px;
+}
+.sektion_2--1{
+  padding-top: 300px;
+}
+/* Media anpassning */
+@media (max-width: 1024px) {
+  .sektion_1 {
+    grid-template-columns: 1fr;
+  }
+  .sidotext {
+    grid-column: auto;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .meny {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .huvudtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding-left: 40px;
+  }
+  .meny ul {
+    gap: 10px;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .meny a {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+  .sektion_1, .sektion_2 {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    padding-bottom: 40px;
+    gap: 20px;
+  }
+  .sidotext {
+    grid-column: auto;
+    max-width: 100%;
+  }
+  .bild,
+  .artikel, .konstbild {
+    grid-column: auto;
+  }
+  .bildkort, .bildkort img {
+    max-width: 400px;
+    height: auto;
+  }
+  .artikel {
+    font-size: 16px;
+
+  }
+  .galleri-grid {
+    grid-auto-columns: 100%;
+  }
+  .konstbild {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .galleri_grid {
+    grid-template-columns: 1fr;
+  }
+  .sidotext {
+    grid-column: auto;
+    max-width: 100%;
+  }
+  .bildkort, .bildkort img {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
